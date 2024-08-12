@@ -1,0 +1,132 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.perfil {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-image: url("/public/img/fondo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  gap: 30px;
+}
+
+/* ************************navegacion****************************** */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+  height: 70px;
+  list-style: none;
+  background-color: rgba(4, 25, 44, 0.384);
+  color: #fff;
+}
+.logo {
+  width: 200px;
+}
+/* portada de la pagina  */
+.tractor {
+  width: 350px;
+}
+
+/* titulo  h1 */
+.titulo {
+  font-size: 60px;
+  text-align: center;
+  color: #ffff;
+  text-shadow: 2px 2px 2px gray, -2px 2px 2px rgba(4, 25, 44, 0.384);
+}
+.whatsapp {
+  z-index: 2;
+  position: fixed;
+  left: 80%;
+  font-size: 40px;
+  color: green;
+  background: #fff;
+  border-radius: 50%;
+}
+/* ***************************acerca de****************************************  */
+.acerca__de {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  gap: 2rem;
+  /* margin: 12px; */
+}
+
+.contenedor__texto-acercade {
+  text-align: justify;
+  padding: 20px;
+  width: 50%;
+  height: 450px;
+  /* border: 1px solid #000; */
+  box-shadow: 2px 2px 2px 2px gray;
+}
+.contenedor__img-acercade {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+  height: 450px;
+}
+.contenedor__texto-img {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1rem;
+}
+img {
+  width: 100%;
+  height: 220px;
+}
+
+/* estilos de grid  cultivos */
+.cultivos {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.grid__cultivos {
+  display: grid;
+  gap: 5px;
+  padding: 5px;
+  grid-template-areas:
+    "grid__uno grid__uno grid__uno "
+    "grid__dos grid__dos grid__tres "
+    "grid__cuatro grid__cuatro grid__cuatro ";
+}
+.grid__uno {
+  grid-area: grid__uno;
+}
+.grid__dos {
+  grid-area: grid__dos;
+}
+.grid__tres {
+  grid-area: grid__tres;
+}
+.grid__cuatro {
+  grid-area: grid__cuatro;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  text-align: center;
+}
+.grid {
+    gap: 12px;
+}
+
+.img__grid-cultivos {
+  width: 100%;
+  height: 250px; /* O cualquier altura que desees */
+  /* object-fit: cover; Ajusta la imagen */
+}
+span{
+    text-align: justify;
+    padding: 8px;
+}
